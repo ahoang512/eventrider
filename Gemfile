@@ -3,8 +3,12 @@ source 'https://rubygems.org'
 
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
 gem 'rails', '4.2.5'
-
+gem 'bootstrap-sass'
 gem 'pg'
+gem 'annotate'
+gem 'pry-rails'
+gem 'react-rails', '1.3.0'
+gem 'flux-rails-assets'
 # Use SCSS for stylesheets
 # gem 'sass-rails', '~> 5.0'
 # Use Uglifier as compressor for JavaScript assets
