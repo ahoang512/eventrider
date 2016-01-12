@@ -101,8 +101,9 @@ var Login = React.createClass({
 
   render : function (){
     return (
-      <a href="#" onClick={this.handleClick}>Login</a>
+
       <div id="status">
+        <a href="#" onClick={this.handleClick}>Login</a>
       </div>
     )
   },
