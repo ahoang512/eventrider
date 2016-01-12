@@ -23,7 +23,7 @@ var Login = React.createClass({
       // These three cases are handled in the callback function.
 
       FB.getLoginStatus(function(response) {
-        statusChangeCallback(response);
+        this.statusChangeCallback(response);
       }.bind(this));
     }.bind(this);
 
