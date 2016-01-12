@@ -7,6 +7,7 @@ $(function(){
     render: function(){
       return (
           <div className="app">
+            <Login/>
           </div>
       );
     }
