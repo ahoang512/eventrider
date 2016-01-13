@@ -1,5 +1,12 @@
 var Login = React.createClass({
   // FB.api("/10153429560556872/events", function(response) { console.log(response)})
+  getInitialState : function(){
+    return ({
+      loggedIn : false
+    });
+  },
+
+
   componentDidMount : function () {
     window.fbAsyncInit = function() {
       FB.init({
@@ -49,7 +56,11 @@ var Login = React.createClass({
     // for FB.getLoginStatus().
     if (response.status === 'connected') {
       // Logged into your app and Facebook.
+
       this.testAPI();
+      this.setState({
+        loggedIn : true
+      });
     } else if (response.status === 'not_authorized') {
       // The person is logged into Facebook, but not your app.
       document.getElementById('status').innerHTML += 'Please log ' +
@@ -72,18 +83,19 @@ var Login = React.createClass({
 
       console.log(response);
       console.log('Successful login for: ' + response.name);
-      document.getElementById('status').innerHTML =
-        'Thanks for logging in, ' + response.name + '!';
+      // document.getElementById('status').innerHTML =
+      //   'Thanks for logging in, ' + response.name + '!';
+
     });
   },
 
   // This function is called when someone finishes with the Login
   // Button.  See the onlogin handler attached to it in the sample
   // code below.
-  checkLoginState : function() {
+  checkLoginState : function(response) {
     FB.getLoginStatus(function(response) {
-      statusChangeCallback(response);
-    });
+      this.statusChangeCallback(response);
+    }.bind(this), true);
   },
 
   fbAsyncInit : function() {
@@ -96,17 +108,40 @@ var Login = React.createClass({
     });
   },
 
-  handleClick : function () {
-    FB.login(this.checkLoginState(),
-      {scope : 'public_profile,email,user_events'}
-    );
+  handleClick : function (e) {
+    if (e.target.textContent === "Log In"){
+      // FB.login(this.checkLoginState(),
+      // {scope : 'public_profile,email,user_events'}
+      // );
+      FB.login(function(response){
+        this.checkLoginState(response);
+      }.bind(this),
+        {scope : 'public_profile,email,user_events'}
+      );
+
+    }else{
+      FB.logout(function(response) {
+        console.log("bye!");
+      });
+      this.setState({
+        loggedIn : false
+      });
+    }
+
   },
 
   render : function (){
+    var log = "Log In";
+    var msg = "Please log in through your facebook account";
+    if (this.state.loggedIn){
+      log = "Log Out";
+      msg = "Welcome to eventrider!";
+    }
     return (
-
-      <div id="status">
-      <a href="#" onClick={this.handleClick}>Login</a>
+      <div>
+        <div id="status"/>
+        <h1>{msg}</h1>
+        <a id="login" href="#" onClick={this.handleClick}>{log}</a>
       </div>
     )
   },
