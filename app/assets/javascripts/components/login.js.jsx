@@ -97,7 +97,7 @@ var Login = React.createClass({
 
   handleClick : function () {
     FB.login(this.checkLoginState(),
-      {scope : 'user_events'}
+      {scope : 'public_profile,email,user_events'}
     );
   },
 
