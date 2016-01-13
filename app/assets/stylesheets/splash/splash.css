@@ -1,0 +1,11 @@
+.splash {
+  height: 100vh;
+  background-color: silver;
+}
+
+.splash > div {
+  margin: auto;
+  width: 20%;
+  height: 70%;
+  background-color: rgba(198,226,255,0.5);
+}

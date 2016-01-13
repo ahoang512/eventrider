@@ -1,4 +1,5 @@
 var Login = React.createClass({
+  // FB.api("/10153429560556872/events", function(response) { console.log(response)})
   componentDidMount : function () {
     window.fbAsyncInit = function() {
       FB.init({

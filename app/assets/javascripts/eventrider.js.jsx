@@ -7,7 +7,8 @@ $(function(){
     render: function(){
       return (
           <div className="app">
-            <Login/>
+            <NavBar/>
+            {this.props.children}
           </div>
       );
     }
@@ -16,6 +17,7 @@ $(function(){
   React.render((
       <Router>
         <Route path="/" component= {App}>
+        <IndexRoute component={Splash}/>
         </Route>
       </Router>
     ), root);

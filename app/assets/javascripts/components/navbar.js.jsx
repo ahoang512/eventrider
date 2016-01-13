@@ -1,7 +1,11 @@
 var NavBar = React.createClass({
   render : function () {
     return (
-      <div>hello</div>
+      <div className="navbar">
+        <div>
+          eventrider
+        </div>
+      </div>
     )
   }
 
