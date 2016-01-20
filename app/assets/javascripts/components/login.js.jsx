@@ -1,5 +1,7 @@
 var Login = React.createClass({
+  mixins : [ReactRouter.History],
   // FB.api("/10153429560556872/events", function(response) { console.log(response)})
+  // FB.api('/10153429560556872/picture',function(resp){ console.log(resp)})
   getInitialState : function(){
     return ({
       loggedIn : false
@@ -56,8 +58,8 @@ var Login = React.createClass({
     // for FB.getLoginStatus().
     if (response.status === 'connected') {
       // Logged into your app and Facebook.
-
-      this.testAPI();
+      this.history.pushState({}, "events");
+      // this.testAPI();
       this.setState({
         loggedIn : true
       });

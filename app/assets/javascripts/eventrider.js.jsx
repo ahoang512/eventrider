@@ -18,6 +18,7 @@ $(function(){
       <Router>
         <Route path="/" component= {App}>
         <IndexRoute component={Splash}/>
+          <Route path="events" component={Events}/>
         </Route>
       </Router>
     ), root);
