@@ -1,4 +1,4 @@
-$(function(){
+$(document).ready((function(){
   var Router = ReactRouter.Router;
   var Route = ReactRouter.Route;
   var IndexRoute = ReactRouter.IndexRoute;
@@ -22,4 +22,4 @@ $(function(){
         </Route>
       </Router>
     ), root);
-});
+}));
