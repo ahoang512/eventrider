@@ -1,0 +1,5 @@
+window.EventUtil = {
+  getUserEvents : function () {
+
+  }
+};

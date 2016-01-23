@@ -1,8 +1,12 @@
 (function(root) {
   var CHANGE_EVENT = "events_changed";
 
+  var _events = [];
 
   root.EventStore = $.extend({}, EventEmitter.prototype, {
+    all : function () {
+      return _events.slice();
+    },
 
     addChangeListener : function (callback) {
       this.on(CHANGE_EVENT, callback);
