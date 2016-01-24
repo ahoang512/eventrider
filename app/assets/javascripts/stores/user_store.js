@@ -1,9 +1,10 @@
 (function(root) {
   var CHANGE_EVENT = "user_changed";
 
-  var _user = {};
+  var _user = "";
 
   var resetUser = function (user){
+    _user = {};
     var names = user.name.split(" ");
 
     _user.id = user.id;
@@ -25,7 +26,6 @@
     dispatcherId : AppDispatcher.register(function(action){
       switch (action.actionType){
         case UserConstants.CURRENT_USER_RECEIVED:
-          debugger
           resetUser(action.user);
           root.UserStore.emit(CHANGE_EVENT);
           break;
