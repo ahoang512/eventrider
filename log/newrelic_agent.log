@@ -376,3 +376,4 @@
 [2016-01-24 22:07:51 -0800 Anthonys-MacBook-Pro.local (708)] INFO : Doing deferred dependency-detection before Rack startup
 [2016-01-24 22:07:58 -0800 Anthonys-MacBook-Pro.local (708)] ERROR : Invalid license key, please contact support@newrelic.com
 [2016-01-24 22:07:58 -0800 Anthonys-MacBook-Pro.local (708)] ERROR : Visit NewRelic.com to obtain a valid license key, or to upgrade your account.
+[2016-01-24 22:49:31 -0800 Anthonys-MacBook-Pro.local (708)] INFO : Starting Agent shutdown
