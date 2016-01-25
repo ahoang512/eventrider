@@ -2,7 +2,7 @@ window.EventUtil = {
   getUserEvents : function (id) {
     console.log('/' + id + '/events');
     FB.api('/' + id + '/events', function(response) {
-      console.log(response);
+      EventActions.receiveEvents(response.data);
     }.bind(this));
   }.bind(this)
 };

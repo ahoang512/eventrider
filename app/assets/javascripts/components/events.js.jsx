@@ -37,6 +37,10 @@ var Events = React.createClass({
 
 
   render : function() {
+    debugger
+    for (var i = 0; i < this.state.events.length; i++) {
+      console.log(this.state.events[i]);
+    }
     return (
       <div className = "events">
         <h1>Your Events</h1>
