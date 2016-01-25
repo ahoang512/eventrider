@@ -12,7 +12,6 @@ var Events = React.createClass({
 
   componentDidMount : function () {
     UserUtil.getCurrentUser();
-
     EventStore.addChangeListener(this._onChange);
     UserStore.addChangeListener(this._onChange);
   },
@@ -24,9 +23,6 @@ var Events = React.createClass({
 
   _onChange : function () {
     var user = UserStore.user();
-    if (user !== "") {
-      EventUtil.getUserEvents(user.id);
-    }
 
     this.setState({
       events : EventStore.all(),
@@ -37,9 +33,12 @@ var Events = React.createClass({
 
 
   render : function() {
-    debugger
+    var user = this.state.user;
+    if (user !== "" && this.state.events.length === 0){
+      EventUtil.getUserEvents(user.id);
+    }
     for (var i = 0; i < this.state.events.length; i++) {
-      console.log(this.state.events[i]);
+      console.log(this.state.events[i].start_time);
     }
     return (
       <div className = "events">
