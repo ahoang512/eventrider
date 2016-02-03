@@ -4,6 +4,7 @@
   var _events = [];
 
   var resetEvents = function (events) {
+    // console.log(events);
     _events = events;
   };
 
@@ -22,17 +23,15 @@
       var startMonth = parseInt(start_time[1]);
       var startDay = parseInt(start_time[2]);
 
-      if (startYear >= todayYear) {
+      if (startYear === todayYear) {
         if (startMonth >= todayMonth){
           if (startDay >= todayDay){
-            console.log("push");
             filtered.push(events[i]);
           }
         }
       }
     }
-    debugger
-    return filtered;
+    resetEvents(filtered);
 
   };
 

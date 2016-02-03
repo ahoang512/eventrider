@@ -34,15 +34,28 @@ var Events = React.createClass({
 
   render : function() {
     var user = this.state.user;
-    if (user !== "" && this.state.events.length === 0){
+    var events = this.state.events;
+    var evnts = [];
+    if (user !== "" && events.length === 0){
       EventUtil.getUserEvents(user.id);
     }
-    for (var i = 0; i < this.state.events.length; i++) {
-      console.log(this.state.events[i].start_time);
+
+    if (events.length !== 0){
+      evnts = events.map(function(evt){
+        return (
+          <div>
+            {evt.name}
+          </div>
+        )
+      });
     }
+
     return (
       <div className = "events">
         <h1>Your Events</h1>
+        <ul>
+          {evnts}
+        </ul>
       </div>
     );
   }
