@@ -56,7 +56,7 @@ var Login = React.createClass({
     // for FB.getLoginStatus().
     if (response.status === 'connected') {
       // Logged into your app and Facebook.
-      this.history.pushState({}, "events");
+      // this.history.pushState({}, "events");
       // this.testAPI();
       this.setState({
         loggedIn : true

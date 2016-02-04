@@ -1,8 +1,9 @@
 .splash {
-  padding-top: 5%;
-
-  height: 100vh;
-  background-color: lightblue;
+  background-image: url('http://res.cloudinary.com/dayd3nm4v/image/upload/v1454612424/IMG_4096_de8bnx.jpg');
+  background-position: bottom;
+  background-size: cover !important;
+  min-height: 600px;
+  width: 100%;
 }
 
 .splash > div {

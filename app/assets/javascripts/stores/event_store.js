@@ -4,7 +4,7 @@
   var _events = [];
 
   var resetEvents = function (events) {
-    // console.log(events);
+    console.log(events);
     _events = events;
   };
 
