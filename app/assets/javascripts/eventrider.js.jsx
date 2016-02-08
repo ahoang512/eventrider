@@ -17,7 +17,7 @@ $(document).ready((function(){
   React.render((
       <Router>
         <Route path="/" component= {App}>
-        <IndexRoute component={Splash}/>
+        <IndexRoute component={Homepage}/>
           <Route path="events" component={Events}/>
         </Route>
       </Router>

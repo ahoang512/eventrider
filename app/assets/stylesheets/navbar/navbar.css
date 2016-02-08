@@ -1,7 +1,23 @@
 .navbar {
-background-color: rgba(255,255,255,0.2);
+  background-color: rgba(255,255,255,0.3);
   color: white;
-  font-size: x-large;
-  position: fixed;
+  font-size: large;
+  position:absolute;
   width: 100%;
+  min-height: 50px;
+}
+
+.navbar > div {
+  /*width: 90%;*/
+  margin: auto;
+}
+
+#logo {
+  float: left;
+  padding: 15px 15px;
+}
+
+.navLogin {
+  padding: 15px 15px;
+  float: right;
 }

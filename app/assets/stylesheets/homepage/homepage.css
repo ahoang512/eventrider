@@ -1,0 +1,26 @@
+.homeTop {
+  background-image: url('http://res.cloudinary.com/dayd3nm4v/image/upload/v1454612424/IMG_4096_de8bnx.jpg');
+  background-position: bottom;
+  filter: brightness(50%);
+  background-size: cover !important;
+  min-height: 600px;
+  width: 100%;
+}
+
+.jumboTron {
+  position : relative;
+  color: black;
+  font-size: 40px;
+  margin: auto;
+  width: 70%;
+  text-align: center;
+  padding-top : 200px;
+}
+
+.jumboTron h2 {
+  color: white;
+  padding-top: 250px;
+  text-align: center;
+  /*position: absolute;*/
+  /*bottom: 0px;*/
+}
