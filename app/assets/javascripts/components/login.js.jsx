@@ -122,17 +122,11 @@ var Login = React.createClass({
   },
 
   render : function (){
-    var log = "Log In";
-    var msg = "Please log in through your facebook account";
-    if (this.state.loggedIn){
-      log = "Log Out";
-      msg = "Welcome to eventrider!";
-    }
+
     return (
       <div>
         <div id="status"/>
-        <h1>{msg}</h1>
-        <a id="login" href="#" onClick={this.handleClick}>{log}</a>
+      {/*<a id="login" href="#" onClick={this.handleClick}>{log}</a>*/}
       </div>
     )
   },

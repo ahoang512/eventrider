@@ -19,6 +19,7 @@ $(document).ready((function(){
         <Route path="/" component= {App}>
         <IndexRoute component={Homepage}/>
           <Route path="events" component={Events}/>
+          <Route path="loginPage" component={Login}/>
         </Route>
       </Router>
     ), root);
