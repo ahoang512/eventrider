@@ -2,9 +2,10 @@ var JumboTron = React.createClass({
   render : function () {
     return (
       <div className="jumboTron">
-        <h1>
-          Carpool to all your Future Events, Raves, Concerts!
-        </h1>
+        <div className="miniTron">
+          <h1>Share the trip</h1>
+          <h2>Setup a carpool to your next event on eventrider</h2>
+        </div>
 
         <h2>
           Find a ride!

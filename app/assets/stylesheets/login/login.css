@@ -1,0 +1,10 @@
+#loginWindow {
+  /*background-image: url('http://res.cloudinary.com/dayd3nm4v/image/upload/v1455752114/showtek_nmplas.jpg');*/
+  /*background-size: cover !important;
+  background-position: center;*/
+  background-color: grey;
+  padding-top: 50px;
+  margin: auto;
+  width: 80%;
+  min-height: 600px;
+}

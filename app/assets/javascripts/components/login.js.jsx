@@ -58,6 +58,7 @@ var Login = React.createClass({
       // Logged into your app and Facebook.
       // this.history.pushState({}, "events");
       // this.testAPI();
+      console.log("yo");
       this.setState({
         loggedIn : true
       });
@@ -122,12 +123,19 @@ var Login = React.createClass({
   },
 
   render : function (){
-
+    var loggedIn  = this.state.loggedIn;
+    var tmp = "";
+    if (loggedIn){
+      tmp = "Log Out";
+    }else {
+      tmp = "Log In";
+    }
     return (
-      <div>
-        <div id="status"/>
-      {/*<a id="login" href="#" onClick={this.handleClick}>{log}</a>*/}
+      <div id = "loginWindow">
+        <h1>Looking to setup a ride?</h1>
+        <h2>Log in to get started!</h2>
+          <a id="login" href="#" onClick={this.handleClick}>{tmp}</a>
       </div>
-    )
+    );
   },
 });
