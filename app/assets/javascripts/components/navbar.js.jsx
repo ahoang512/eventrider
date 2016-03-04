@@ -88,7 +88,7 @@ var NavBar = React.createClass({
   _onChange : function (e){
 
     switch (e.target.textContent){
-      case  "Log in":
+    case  "Log In":
         this.history.pushState({}, "loginPage");
         break;
     }
@@ -102,7 +102,7 @@ var NavBar = React.createClass({
             eventrider
           </div>
           <div className="navLogin" onClick={this._onChange}>
-            Log in
+            Log In
           </div>
         </div>
       </div>

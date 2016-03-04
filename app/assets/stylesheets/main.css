@@ -15,12 +15,29 @@ time, mark, audio, video {
  padding: 0;
  border: 0;
  font-size: 100%;
- font-family: 'Roboto', sans-serif;
+ /*font-family: 'Roboto', sans-serif;*/
+ font-family: 'Fira Sans', sans-serif;
  list-style-type: none;
 }
+
+html,body {
+height: 100%;
+width: 100%;
+}
+
 
 .clearfix:after {
   content: "";
   display: block;
   clear: both;
+}
+
+.app {
+  height: 100%;
+  width: 100%;
+}
+
+#root {
+  height: 100%;
+  width: 100%;
 }

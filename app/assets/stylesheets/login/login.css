@@ -1,10 +1,19 @@
-#loginWindow {
-  /*background-image: url('http://res.cloudinary.com/dayd3nm4v/image/upload/v1455752114/showtek_nmplas.jpg');*/
-  /*background-size: cover !important;
-  background-position: center;*/
+#loginContainer {
   background-color: grey;
-  padding-top: 50px;
   margin: auto;
-  width: 80%;
+  width: 70%;
   min-height: 600px;
+}
+
+#loginContainer .logo {
+  width: 250px;
+  text-align: center;
+  font-size: 50px;
+  margin: auto;
+}
+
+#loginContainer .prompt {
+  width: 350px;
+  text-align: center;
+  margin: auto;
 }

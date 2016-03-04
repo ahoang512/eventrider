@@ -4,7 +4,7 @@ var JumboTron = React.createClass({
       <div className="jumboTron">
         <div className="miniTron">
           <h1>Share the trip</h1>
-          <h2>Setup a carpool to your next event on eventrider</h2>
+          <h2>Setup a ride to your next event on eventrider</h2>
         </div>
 
         <h2>

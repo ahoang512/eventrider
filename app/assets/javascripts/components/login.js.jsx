@@ -131,9 +131,9 @@ var Login = React.createClass({
       tmp = "Log In";
     }
     return (
-      <div id = "loginWindow">
-        <h1>Looking to setup a ride?</h1>
-        <h2>Log in to get started!</h2>
+      <div id = "loginContainer">
+        <div className="logo">eventrider</div>
+        <div className="prompt">Login with Facebook to start setting up a ride</div>
           <a id="login" href="#" onClick={this.handleClick}>{tmp}</a>
       </div>
     );

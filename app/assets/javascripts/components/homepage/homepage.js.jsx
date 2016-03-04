@@ -1,12 +1,17 @@
 var Homepage = React.createClass({
+
+  _topClick : function () {
+    $('body').scrollTo('#homeMiddle', 1000);
+  },
+
   render : function () {
     return(
-      <div className="homepage">
-        <div className="homeTop">
+      <div id="homepage">
+        <div className="homeTop" onClick={this._topClick}>
           <JumboTron/>
         </div>
-        <div>
-        </div>
+        <HomeMiddle/>
+        <Footer/>
       </div>
     )
   }

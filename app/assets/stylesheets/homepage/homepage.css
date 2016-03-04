@@ -1,5 +1,13 @@
+#homepage {
+  /*background: url('http://res.cloudinary.com/dayd3nm4v/image/upload/v1457060181/25021811086_eb5702d33f_o_au4qdv.jpg');
+  background-position: center;
+  background-attachment: fixed;
+  background-size: cover;*/
+  height: 100%;
+}
+
 .homeTop {
-  background: linear-gradient( rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2) ) , url('http://res.cloudinary.com/dayd3nm4v/image/upload/v1456974330/24752607950_a59864b2e1_o_hlwruk.jpg');
+  background: linear-gradient( rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3) ) , url('http://res.cloudinary.com/dayd3nm4v/image/upload/v1456974330/24752607950_a59864b2e1_o_hlwruk.jpg');
   background-position: bottom;
   filter: brightness(50%);
   background-size: cover !important;
@@ -8,7 +16,7 @@
 }
 
 .jumboTron {
-  position : relative;
+  /*position : relative;*/
   color: white;
   font-size: 40px;
   margin: auto;
@@ -18,15 +26,38 @@
 }
 
 .miniTron h1 {
-  font-size: 60px;
+  font-size: 70px;
 }
 
 .miniTron h2 {
-  font-size: 18px;
+  font-size: 25px;
 }
 .jumboTron > h2 {
   color: white;
-  padding-top: 250px;
+  padding-top: 200px;
   text-align: center;
 
+}
+
+#homeMiddle {
+  height: 350px;
+  width: 100%;
+  background-color: #F2F2F2;
+}
+
+#homeMiddle .prompt {
+  margin: auto;
+  margin-top: 10px;
+  width: 200px;
+  font-size: 20px;
+  text-align: center;
+}
+
+#homeMiddle .featured div {
+  display: inline-block;
+  height: 300px;
+  width: 450px;
+  margin: 5px;
+  border-style: solid;
+  border-width: 3px;
 }
