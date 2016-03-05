@@ -77,31 +77,32 @@ var NavBar = React.createClass({
   },
 
 
-  _login : function (e) {
-    FB.login(function(response){
-      this.checkLoginState(response);
-    }.bind(this),
-      {scope : 'public_profile,email,user_events'}
-    );
+  // _login : function (e) {
+  //   FB.login(function(response){
+  //     this.checkLoginState(response);
+  //   }.bind(this),
+  //     {scope : 'public_profile,email,user_events'}
+  //   );
+  // },
+
+  _login : function (e){
+    e.preventDefault();
+    this.history.pushState({}, "loginPage");
   },
 
-  _onChange : function (e){
-
-    switch (e.target.textContent){
-    case  "Log In":
-        this.history.pushState({}, "loginPage");
-        break;
-    }
+  _logo : function (e) {
+    e.preventDefault();
+    this.history.pushState({}, "/");
   },
 
   render : function () {
     return (
       <div className="navbar">
         <div className="clearfix">
-          <div id="logo">
+          <div id="logo" onClick={this._logo}>
             eventrider
           </div>
-          <div className="navLogin" onClick={this._onChange}>
+          <div className="navLogin" onClick={this._login}>
             Log In
           </div>
         </div>

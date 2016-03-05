@@ -133,8 +133,10 @@ var Login = React.createClass({
     return (
       <div id = "loginContainer">
         <div className="logo">eventrider</div>
-        <div className="prompt">Login with Facebook to start setting up a ride</div>
-          <a id="login" href="#" onClick={this.handleClick}>{tmp}</a>
+        <div className="prompt">Login with Facebook to setup a ride</div>
+        <div className="loginButton" onClick={this.handleClick}>
+          Log in with Facebook
+        </div>
       </div>
     );
   },

@@ -1,11 +1,15 @@
 #loginContainer {
-  background-color: grey;
+  height: 100%;
+  background: url('http://res.cloudinary.com/dayd3nm4v/image/upload/v1457060181/25021811086_eb5702d33f_o_au4qdv.jpg');
+  background-position: center;
+  background-attachment: fixed;
+  background-size: cover;
   margin: auto;
-  width: 70%;
-  min-height: 600px;
+  color: white;
 }
 
 #loginContainer .logo {
+  padding-top: 200px;
   width: 250px;
   text-align: center;
   font-size: 50px;
@@ -14,6 +18,19 @@
 
 #loginContainer .prompt {
   width: 350px;
+  font-size: 20px;
   text-align: center;
   margin: auto;
+}
+
+#loginContainer .loginButton {
+  width: 215px;
+  height: 60px;
+  line-height: 60px;
+  margin: auto;
+  margin-top: 15px;
+  background-color: #3b5998;
+  border-radius: 6px;
+  text-align: center;
+  cursor: pointer;
 }
