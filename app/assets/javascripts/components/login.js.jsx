@@ -58,7 +58,7 @@ var Login = React.createClass({
       // Logged into your app and Facebook.
       // this.history.pushState({}, "events");
       // this.testAPI();
-      console.log("yo");
+      this.history.pushState({}, "/");
       this.setState({
         loggedIn : true
       });
@@ -101,24 +101,28 @@ var Login = React.createClass({
 
 
   handleClick : function (e) {
-    if (e.target.textContent === "Log In"){
-      // FB.login(this.checkLoginState(),
-      // {scope : 'public_profile,email,user_events'}
-      // );
-      FB.login(function(response){
-        this.checkLoginState(response);
-      }.bind(this),
-        {scope : 'public_profile,email,user_events'}
-      );
 
-    }else{
-      FB.logout(function(response) {
-        console.log("bye!");
-      });
-      this.setState({
-        loggedIn : false
-      });
-    }
+    FB.login(function(response){
+      this.checkLoginState(response);
+    }.bind(this),
+      {scope : 'public_profile,email,user_events'}
+    );
+
+    // if (e.target.textContent === "Log In"){
+    //   FB.login(function(response){
+    //     this.checkLoginState(response);
+    //   }.bind(this),
+    //     {scope : 'public_profile,email,user_events'}
+    //   );
+    //
+    // }else{
+    //   FB.logout(function(response) {
+    //     console.log("bye!");
+    //   });
+    //   this.setState({
+    //     loggedIn : false
+    //   });
+    // }
 
   },
 
