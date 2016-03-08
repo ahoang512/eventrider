@@ -39,25 +39,49 @@
 
 }
 
-#homeMiddle {
+#featuredBar {
   height: 350px;
   width: 100%;
   background-color: #F2F2F2;
 }
 
-#homeMiddle .prompt {
+#featuredBar .prompt {
   margin: auto;
   margin-top: 10px;
   width: 200px;
-  font-size: 20px;
+  font-size: 25px;
   text-align: center;
 }
 
-#homeMiddle .featured div {
+#featuredBar .featured div {
   display: inline-block;
   height: 300px;
   width: 450px;
   margin: 5px;
   border-style: solid;
   border-width: 3px;
+}
+
+.requestPrompt  {
+  font-size: 25px;
+  width: 75%;
+  margin: auto;
+}
+
+.requestPrompt div {
+  width: 100%;
+  margin: auto;
+  margin-top: 10px;
+  text-align: center;
+}
+#requestButton{
+  font-size: 20px;
+  padding: 10px;
+  border-radius: 5px;
+  display: inline-block;
+  border: solid 1px;
+  width: auto;
+  margin: auto;
+  background-color: #0A41A5;
+  color: white;
 }

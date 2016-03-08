@@ -1,8 +1,5 @@
 var Homepage = React.createClass({
 
-  _topClick : function () {
-    $('body').scrollTo('#homeMiddle', 1000);
-  },
 
   render : function () {
     return(
@@ -10,7 +7,7 @@ var Homepage = React.createClass({
         <div className="homeTop" onClick={this._topClick}>
           <JumboTron/>
         </div>
-        <HomeMiddle/>
+        <FeaturedBar/>
         <Footer/>
       </div>
     )
