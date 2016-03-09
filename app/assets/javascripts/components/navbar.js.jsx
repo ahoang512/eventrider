@@ -51,6 +51,7 @@ var NavBar = React.createClass({
   },
 
 
+
   _log : function (e){
     e.preventDefault();
     switch (e.target.textContent){

@@ -59,9 +59,9 @@ var Login = React.createClass({
       // this.history.pushState({}, "events");
       // this.testAPI();
       this.history.pushState({}, "/");
-      this.setState({
-        loggedIn : true
-      });
+      // this.setState({
+      //   loggedIn : true
+      // });
     } else if (response.status === 'not_authorized') {
       // The person is logged into Facebook, but not your app.
       document.getElementById('status').innerHTML += 'Please log ' +
