@@ -7,6 +7,7 @@ var Homepage = React.createClass({
           <JumboTron/>
         </div>
         <FeaturedBar/>
+        <Footer/>
       </div>
     )
   }

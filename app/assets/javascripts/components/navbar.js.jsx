@@ -63,7 +63,7 @@ var NavBar = React.createClass({
         }.bind(this));
         break;
       case "Log In":
-        this.history.pushState({}, "loginPage");
+        this.history.pushState({}, "login");
         break;
     }
   },

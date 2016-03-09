@@ -1,4 +1,8 @@
 var FeaturedBar = React.createClass({
+  mixins : [ReactRouter.History],
+  _request : function () {
+    this.history.pushState({}, "request");
+  },
   render : function () {
     return (
       <div id="featuredBar">
@@ -7,7 +11,9 @@ var FeaturedBar = React.createClass({
         <div className="requestPrompt">
           <div>Don't see your event?</div>
           <div>
-            <div id="requestButton">Suggest an Event</div>
+            <div id="requestButton" onClick = {this._request}>
+              Suggest an Event
+            </div>
           </div>
         </div>
       </div>

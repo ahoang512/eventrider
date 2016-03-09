@@ -9,7 +9,6 @@ $(document).ready((function(){
           <div className="app">
             <NavBar/>
             {this.props.children}
-            <Footer/>
           </div>
       );
     }
@@ -19,8 +18,8 @@ $(document).ready((function(){
       <Router>
         <Route path="/" component= {App}>
         <IndexRoute component={Homepage}/>
-          <Route path="events" component={Events}/>
-          <Route path="loginPage" component={Login}/>
+          <Route path="login" component={Login}/>
+          <Route path="request" component={RequestPage}/>
         </Route>
       </Router>
     ), root);
