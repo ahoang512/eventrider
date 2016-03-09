@@ -9,6 +9,7 @@ $(document).ready((function(){
           <div className="app">
             <NavBar/>
             {this.props.children}
+            <Footer/>
           </div>
       );
     }

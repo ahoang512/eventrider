@@ -1,0 +1,26 @@
+#footer {
+  background-color: #525658;
+  width: 100%;
+  margin: auto;
+}
+
+.footerContent {
+  width: 550px;
+  margin: auto;
+  padding-top: 25px;
+  height: 75px;
+  padding-bottom: 25px;
+
+}
+
+
+.footerContent div{
+  padding-left: 95px;
+  padding-right: 35px;
+  float: left;
+}
+
+#footer img {
+  height: 40px;
+  cursor: pointer;
+}

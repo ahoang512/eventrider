@@ -3,7 +3,8 @@
   background-position: center;
   background-attachment: fixed;
   background-size: cover;*/
-  height: 100%;
+  /*height: 100%;*/
+  /*display: inline-block;*/
 }
 
 .homeTop {
@@ -40,9 +41,10 @@
 }
 
 #featuredBar {
-  height: 350px;
+  height: 475px;
   width: 100%;
   background-color: #F2F2F2;
+  display: inline-block;
 }
 
 #featuredBar .prompt {
@@ -63,15 +65,16 @@
 }
 
 .requestPrompt  {
+  padding-top: 15px;
   font-size: 25px;
-  width: 75%;
+  height: 100px;
+  width: 100%;
   margin: auto;
 }
 
 .requestPrompt div {
   width: 100%;
   margin: auto;
-  margin-top: 10px;
   text-align: center;
 }
 #requestButton{
@@ -82,6 +85,7 @@
   border: solid 1px;
   width: auto;
   margin: auto;
+  margin-top: 15px;
   background-color: #0A41A5;
   color: white;
 }
