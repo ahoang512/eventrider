@@ -29,9 +29,9 @@ var RequestPage = React.createClass({
   },
 
   _handleSubmit : function (){
-
+    UserUtil.suggestEvent();
   },
-  
+
   render : function () {
     return (
       <div id="requestContainer">
