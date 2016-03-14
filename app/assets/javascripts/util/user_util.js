@@ -6,11 +6,12 @@ window.UserUtil = {
     }.bind(this));
   }.bind(this),
 
-  suggestEvent : function () {
+  suggestEvent : function (params) {
+
     $.ajax({
       url: "/user/suggest",
       type: "GET",
-      data : {},
+      data : params,
       success : function (){
         // debugger
       }

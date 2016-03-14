@@ -29,7 +29,12 @@ var RequestPage = React.createClass({
   },
 
   _handleSubmit : function (){
-    UserUtil.suggestEvent();
+    var params = {
+      name : this.state.name,
+      place : this.state.place,
+      date : this.state.date
+    }
+    UserUtil.suggestEvent(params);
   },
 
   render : function () {

@@ -1,5 +1,5 @@
 class UserController < ApplicationController
   def suggest
-    OwnerMailer.suggest_email.deliver_now!
+    OwnerMailer.suggest_email(params).deliver_now!
   end
 end
