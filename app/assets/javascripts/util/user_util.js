@@ -7,13 +7,12 @@ window.UserUtil = {
   }.bind(this),
 
   suggestEvent : function (params) {
-
     $.ajax({
       url: "/user/suggest",
       type: "GET",
       data : params,
       success : function (){
-        // debugger
+        
       }
     })
   }

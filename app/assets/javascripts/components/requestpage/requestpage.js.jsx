@@ -34,7 +34,10 @@ var RequestPage = React.createClass({
       place : this.state.place,
       date : this.state.date
     }
-    UserUtil.suggestEvent(params);
+    UserActions.suggestEvent(params);
+    if(window.confirm("Thank you for your request. We will review and update shortly")){
+      this.history.goBack();
+    }
   },
 
   render : function () {
