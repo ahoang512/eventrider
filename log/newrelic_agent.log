@@ -1124,3 +1124,121 @@
 [2016-03-17 10:27:34 -0700 Anthonys-MacBook-Pro.local (1433)] INFO : Installing Rails 4 view instrumentation
 [2016-03-17 10:27:34 -0700 Anthonys-MacBook-Pro.local (1433)] INFO : Installing Rails 4 Error instrumentation
 [2016-03-17 10:27:34 -0700 Anthonys-MacBook-Pro.local (1433)] INFO : Finished instrumentation
+[2016-03-28 11:30:51 -0700 Anthonys-MacBook-Pro.local (3101)] INFO : Starting the New Relic agent in "development" environment.
+[2016-03-28 11:30:51 -0700 Anthonys-MacBook-Pro.local (3101)] INFO : To prevent agent startup add a NEWRELIC_AGENT_ENABLED=false environment variable or modify the "development" section of your newrelic.yml.
+[2016-03-28 11:30:51 -0700 Anthonys-MacBook-Pro.local (3101)] WARN : No configuration file found. Working directory = /Users/anthonyhoang/cs/eventrider
+[2016-03-28 11:30:51 -0700 Anthonys-MacBook-Pro.local (3101)] WARN : Looked in these locations (based on defaults): /Users/anthonyhoang/cs/eventrider/config/newrelic.yml, /Users/anthonyhoang/cs/eventrider/newrelic.yml, /Users/anthonyhoang/cs/eventrider/config/newrelic.yml, /Users/anthonyhoang/cs/eventrider/newrelic.yml, /Users/anthonyhoang/.newrelic/newrelic.yml, /Users/anthonyhoang/newrelic.yml
+[2016-03-28 11:30:51 -0700 Anthonys-MacBook-Pro.local (3101)] INFO : Environment: development
+[2016-03-28 11:30:51 -0700 Anthonys-MacBook-Pro.local (3101)] INFO : Dispatcher: webrick
+[2016-03-28 11:30:51 -0700 Anthonys-MacBook-Pro.local (3101)] INFO : Application: development
+[2016-03-28 11:30:51 -0700 Anthonys-MacBook-Pro.local (3101)] WARN : No license key found. This often means your newrelic.yml file was not found, or it lacks a section for the running environment, 'development'. You may also want to try linting your newrelic.yml to ensure it is valid YML.
+[2016-03-28 11:30:51 -0700 Anthonys-MacBook-Pro.local (3101)] INFO : Installing ActiveJob instrumentation
+[2016-03-28 11:30:51 -0700 Anthonys-MacBook-Pro.local (3101)] INFO : Installing ActiveRecord 4 instrumentation
+[2016-03-28 11:30:51 -0700 Anthonys-MacBook-Pro.local (3101)] INFO : Installing Net instrumentation
+[2016-03-28 11:30:51 -0700 Anthonys-MacBook-Pro.local (3101)] INFO : Installing deferred Rack::Builder instrumentation
+[2016-03-28 11:30:51 -0700 Anthonys-MacBook-Pro.local (3101)] INFO : Installing Rack::Builder middleware instrumentation
+[2016-03-28 11:30:51 -0700 Anthonys-MacBook-Pro.local (3101)] INFO : Installing Rails 3+ middleware instrumentation
+[2016-03-28 11:30:51 -0700 Anthonys-MacBook-Pro.local (3101)] INFO : Installing Rails 4 Controller instrumentation
+[2016-03-28 11:30:51 -0700 Anthonys-MacBook-Pro.local (3101)] INFO : Installing Rails 4 view instrumentation
+[2016-03-28 11:30:51 -0700 Anthonys-MacBook-Pro.local (3101)] INFO : Installing Rails 4 Error instrumentation
+[2016-03-28 11:30:51 -0700 Anthonys-MacBook-Pro.local (3101)] INFO : Finished instrumentation
+[2016-03-28 11:30:52 -0700 Anthonys-MacBook-Pro.local (3101)] INFO : Doing deferred dependency-detection before Rack startup
+[2016-03-28 11:31:12 -0700 Anthonys-MacBook-Pro.local (3101)] ERROR : Invalid license key, please contact support@newrelic.com
+[2016-03-28 11:31:12 -0700 Anthonys-MacBook-Pro.local (3101)] ERROR : Visit NewRelic.com to obtain a valid license key, or to upgrade your account.
+[2016-03-28 19:40:39 -0700 Anthonys-MacBook-Pro.local (3101)] INFO : Starting Agent shutdown
+[2016-04-05 14:35:47 -0700 Anthonys-MacBook-Pro.local (3511)] INFO : Starting the New Relic agent in "development" environment.
+[2016-04-05 14:35:47 -0700 Anthonys-MacBook-Pro.local (3511)] INFO : To prevent agent startup add a NEWRELIC_AGENT_ENABLED=false environment variable or modify the "development" section of your newrelic.yml.
+[2016-04-05 14:35:47 -0700 Anthonys-MacBook-Pro.local (3511)] WARN : No configuration file found. Working directory = /Users/anthonyhoang/cs/eventrider
+[2016-04-05 14:35:47 -0700 Anthonys-MacBook-Pro.local (3511)] WARN : Looked in these locations (based on defaults): /Users/anthonyhoang/cs/eventrider/config/newrelic.yml, /Users/anthonyhoang/cs/eventrider/newrelic.yml, /Users/anthonyhoang/cs/eventrider/config/newrelic.yml, /Users/anthonyhoang/cs/eventrider/newrelic.yml, /Users/anthonyhoang/.newrelic/newrelic.yml, /Users/anthonyhoang/newrelic.yml
+[2016-04-05 14:35:47 -0700 Anthonys-MacBook-Pro.local (3511)] INFO : Environment: development
+[2016-04-05 14:35:47 -0700 Anthonys-MacBook-Pro.local (3511)] INFO : Dispatcher: webrick
+[2016-04-05 14:35:47 -0700 Anthonys-MacBook-Pro.local (3511)] INFO : Application: development
+[2016-04-05 14:35:47 -0700 Anthonys-MacBook-Pro.local (3511)] WARN : No license key found. This often means your newrelic.yml file was not found, or it lacks a section for the running environment, 'development'. You may also want to try linting your newrelic.yml to ensure it is valid YML.
+[2016-04-05 14:35:47 -0700 Anthonys-MacBook-Pro.local (3511)] INFO : Installing ActiveJob instrumentation
+[2016-04-05 14:35:47 -0700 Anthonys-MacBook-Pro.local (3511)] INFO : Installing ActiveRecord 4 instrumentation
+[2016-04-05 14:35:47 -0700 Anthonys-MacBook-Pro.local (3511)] INFO : Installing Net instrumentation
+[2016-04-05 14:35:47 -0700 Anthonys-MacBook-Pro.local (3511)] INFO : Installing deferred Rack::Builder instrumentation
+[2016-04-05 14:35:47 -0700 Anthonys-MacBook-Pro.local (3511)] INFO : Installing Rack::Builder middleware instrumentation
+[2016-04-05 14:35:47 -0700 Anthonys-MacBook-Pro.local (3511)] INFO : Installing Rails 3+ middleware instrumentation
+[2016-04-05 14:35:47 -0700 Anthonys-MacBook-Pro.local (3511)] INFO : Installing Rails 4 Controller instrumentation
+[2016-04-05 14:35:48 -0700 Anthonys-MacBook-Pro.local (3511)] INFO : Installing Rails 4 view instrumentation
+[2016-04-05 14:35:48 -0700 Anthonys-MacBook-Pro.local (3511)] INFO : Installing Rails 4 Error instrumentation
+[2016-04-05 14:35:48 -0700 Anthonys-MacBook-Pro.local (3511)] INFO : Finished instrumentation
+[2016-04-05 14:35:49 -0700 Anthonys-MacBook-Pro.local (3511)] INFO : Doing deferred dependency-detection before Rack startup
+[2016-04-05 14:35:56 -0700 Anthonys-MacBook-Pro.local (3511)] ERROR : Invalid license key, please contact support@newrelic.com
+[2016-04-05 14:35:56 -0700 Anthonys-MacBook-Pro.local (3511)] ERROR : Visit NewRelic.com to obtain a valid license key, or to upgrade your account.
+[2016-04-05 14:38:23 -0700 Anthonys-MacBook-Pro.local (3610)] INFO : Starting the New Relic agent in "development" environment.
+[2016-04-05 14:38:23 -0700 Anthonys-MacBook-Pro.local (3610)] INFO : To prevent agent startup add a NEWRELIC_AGENT_ENABLED=false environment variable or modify the "development" section of your newrelic.yml.
+[2016-04-05 14:38:23 -0700 Anthonys-MacBook-Pro.local (3610)] WARN : No configuration file found. Working directory = /Users/anthonyhoang/cs/eventrider
+[2016-04-05 14:38:23 -0700 Anthonys-MacBook-Pro.local (3610)] WARN : Looked in these locations (based on defaults): /Users/anthonyhoang/cs/eventrider/config/newrelic.yml, /Users/anthonyhoang/cs/eventrider/newrelic.yml, /Users/anthonyhoang/cs/eventrider/config/newrelic.yml, /Users/anthonyhoang/cs/eventrider/newrelic.yml, /Users/anthonyhoang/.newrelic/newrelic.yml, /Users/anthonyhoang/newrelic.yml
+[2016-04-05 14:38:23 -0700 Anthonys-MacBook-Pro.local (3610)] INFO : Environment: development
+[2016-04-05 14:38:23 -0700 Anthonys-MacBook-Pro.local (3610)] INFO : No known dispatcher detected.
+[2016-04-05 14:38:23 -0700 Anthonys-MacBook-Pro.local (3610)] INFO : Application: development
+[2016-04-05 14:38:23 -0700 Anthonys-MacBook-Pro.local (3610)] WARN : No license key found. This often means your newrelic.yml file was not found, or it lacks a section for the running environment, 'development'. You may also want to try linting your newrelic.yml to ensure it is valid YML.
+[2016-04-05 14:38:23 -0700 Anthonys-MacBook-Pro.local (3610)] INFO : Installing ActiveJob instrumentation
+[2016-04-05 14:38:23 -0700 Anthonys-MacBook-Pro.local (3610)] INFO : Installing ActiveRecord 4 instrumentation
+[2016-04-05 14:38:23 -0700 Anthonys-MacBook-Pro.local (3610)] INFO : Installing Net instrumentation
+[2016-04-05 14:38:23 -0700 Anthonys-MacBook-Pro.local (3610)] INFO : Installing deferred Rack::Builder instrumentation
+[2016-04-05 14:38:23 -0700 Anthonys-MacBook-Pro.local (3610)] INFO : Installing Rack::Builder middleware instrumentation
+[2016-04-05 14:38:23 -0700 Anthonys-MacBook-Pro.local (3610)] INFO : Installing Rails 3+ middleware instrumentation
+[2016-04-05 14:38:23 -0700 Anthonys-MacBook-Pro.local (3610)] INFO : Installing Rails 4 Controller instrumentation
+[2016-04-05 14:38:23 -0700 Anthonys-MacBook-Pro.local (3610)] INFO : Installing Rails 4 view instrumentation
+[2016-04-05 14:38:23 -0700 Anthonys-MacBook-Pro.local (3610)] INFO : Installing Rails 4 Error instrumentation
+[2016-04-05 14:38:23 -0700 Anthonys-MacBook-Pro.local (3610)] INFO : Finished instrumentation
+[2016-04-05 14:52:23 -0700 Anthonys-MacBook-Pro.local (3893)] INFO : Starting the New Relic agent in "development" environment.
+[2016-04-05 14:52:23 -0700 Anthonys-MacBook-Pro.local (3893)] INFO : To prevent agent startup add a NEWRELIC_AGENT_ENABLED=false environment variable or modify the "development" section of your newrelic.yml.
+[2016-04-05 14:52:23 -0700 Anthonys-MacBook-Pro.local (3893)] WARN : No configuration file found. Working directory = /Users/anthonyhoang/cs/eventrider
+[2016-04-05 14:52:23 -0700 Anthonys-MacBook-Pro.local (3893)] WARN : Looked in these locations (based on defaults): /Users/anthonyhoang/cs/eventrider/config/newrelic.yml, /Users/anthonyhoang/cs/eventrider/newrelic.yml, /Users/anthonyhoang/cs/eventrider/config/newrelic.yml, /Users/anthonyhoang/cs/eventrider/newrelic.yml, /Users/anthonyhoang/.newrelic/newrelic.yml, /Users/anthonyhoang/newrelic.yml
+[2016-04-05 14:52:23 -0700 Anthonys-MacBook-Pro.local (3893)] INFO : Environment: development
+[2016-04-05 14:52:23 -0700 Anthonys-MacBook-Pro.local (3893)] INFO : No known dispatcher detected.
+[2016-04-05 14:52:23 -0700 Anthonys-MacBook-Pro.local (3893)] INFO : Application: development
+[2016-04-05 14:52:23 -0700 Anthonys-MacBook-Pro.local (3893)] WARN : No license key found. This often means your newrelic.yml file was not found, or it lacks a section for the running environment, 'development'. You may also want to try linting your newrelic.yml to ensure it is valid YML.
+[2016-04-05 14:52:23 -0700 Anthonys-MacBook-Pro.local (3893)] INFO : Installing ActiveJob instrumentation
+[2016-04-05 14:52:23 -0700 Anthonys-MacBook-Pro.local (3893)] INFO : Installing ActiveRecord 4 instrumentation
+[2016-04-05 14:52:23 -0700 Anthonys-MacBook-Pro.local (3893)] INFO : Installing Net instrumentation
+[2016-04-05 14:52:23 -0700 Anthonys-MacBook-Pro.local (3893)] INFO : Installing deferred Rack::Builder instrumentation
+[2016-04-05 14:52:23 -0700 Anthonys-MacBook-Pro.local (3893)] INFO : Installing Rack::Builder middleware instrumentation
+[2016-04-05 14:52:23 -0700 Anthonys-MacBook-Pro.local (3893)] INFO : Installing Rails 3+ middleware instrumentation
+[2016-04-05 14:52:23 -0700 Anthonys-MacBook-Pro.local (3893)] INFO : Installing Rails 4 Controller instrumentation
+[2016-04-05 14:52:24 -0700 Anthonys-MacBook-Pro.local (3893)] INFO : Installing Rails 4 view instrumentation
+[2016-04-05 14:52:24 -0700 Anthonys-MacBook-Pro.local (3893)] INFO : Installing Rails 4 Error instrumentation
+[2016-04-05 14:52:24 -0700 Anthonys-MacBook-Pro.local (3893)] INFO : Finished instrumentation
+[2016-04-12 15:15:53 -0700 Anthonys-MacBook-Pro.local (4839)] INFO : Starting the New Relic agent in "development" environment.
+[2016-04-12 15:15:53 -0700 Anthonys-MacBook-Pro.local (4839)] INFO : To prevent agent startup add a NEWRELIC_AGENT_ENABLED=false environment variable or modify the "development" section of your newrelic.yml.
+[2016-04-12 15:15:53 -0700 Anthonys-MacBook-Pro.local (4839)] WARN : No configuration file found. Working directory = /Users/anthonyhoang/cs/eventrider
+[2016-04-12 15:15:53 -0700 Anthonys-MacBook-Pro.local (4839)] WARN : Looked in these locations (based on defaults): /Users/anthonyhoang/cs/eventrider/config/newrelic.yml, /Users/anthonyhoang/cs/eventrider/newrelic.yml, /Users/anthonyhoang/cs/eventrider/config/newrelic.yml, /Users/anthonyhoang/cs/eventrider/newrelic.yml, /Users/anthonyhoang/.newrelic/newrelic.yml, /Users/anthonyhoang/newrelic.yml
+[2016-04-12 15:15:53 -0700 Anthonys-MacBook-Pro.local (4839)] INFO : Environment: development
+[2016-04-12 15:15:53 -0700 Anthonys-MacBook-Pro.local (4839)] INFO : Dispatcher: webrick
+[2016-04-12 15:15:53 -0700 Anthonys-MacBook-Pro.local (4839)] INFO : Application: development
+[2016-04-12 15:15:53 -0700 Anthonys-MacBook-Pro.local (4839)] WARN : No license key found. This often means your newrelic.yml file was not found, or it lacks a section for the running environment, 'development'. You may also want to try linting your newrelic.yml to ensure it is valid YML.
+[2016-04-12 15:15:53 -0700 Anthonys-MacBook-Pro.local (4839)] INFO : Installing ActiveJob instrumentation
+[2016-04-12 15:15:53 -0700 Anthonys-MacBook-Pro.local (4839)] INFO : Installing ActiveRecord 4 instrumentation
+[2016-04-12 15:15:54 -0700 Anthonys-MacBook-Pro.local (4839)] INFO : Installing Net instrumentation
+[2016-04-12 15:15:54 -0700 Anthonys-MacBook-Pro.local (4839)] INFO : Installing deferred Rack::Builder instrumentation
+[2016-04-12 15:15:54 -0700 Anthonys-MacBook-Pro.local (4839)] INFO : Installing Rack::Builder middleware instrumentation
+[2016-04-12 15:15:54 -0700 Anthonys-MacBook-Pro.local (4839)] INFO : Installing Rails 3+ middleware instrumentation
+[2016-04-12 15:15:54 -0700 Anthonys-MacBook-Pro.local (4839)] INFO : Installing Rails 4 Controller instrumentation
+[2016-04-12 15:15:54 -0700 Anthonys-MacBook-Pro.local (4839)] INFO : Installing Rails 4 view instrumentation
+[2016-04-12 15:15:54 -0700 Anthonys-MacBook-Pro.local (4839)] INFO : Installing Rails 4 Error instrumentation
+[2016-04-12 15:15:54 -0700 Anthonys-MacBook-Pro.local (4839)] INFO : Finished instrumentation
+[2016-04-12 15:15:54 -0700 Anthonys-MacBook-Pro.local (4839)] INFO : Doing deferred dependency-detection before Rack startup
+[2016-04-12 15:17:17 -0700 Anthonys-MacBook-Pro.local (4927)] INFO : Starting the New Relic agent in "development" environment.
+[2016-04-12 15:17:17 -0700 Anthonys-MacBook-Pro.local (4927)] INFO : To prevent agent startup add a NEWRELIC_AGENT_ENABLED=false environment variable or modify the "development" section of your newrelic.yml.
+[2016-04-12 15:17:17 -0700 Anthonys-MacBook-Pro.local (4927)] WARN : No configuration file found. Working directory = /Users/anthonyhoang/cs/eventrider
+[2016-04-12 15:17:17 -0700 Anthonys-MacBook-Pro.local (4927)] WARN : Looked in these locations (based on defaults): /Users/anthonyhoang/cs/eventrider/config/newrelic.yml, /Users/anthonyhoang/cs/eventrider/newrelic.yml, /Users/anthonyhoang/cs/eventrider/config/newrelic.yml, /Users/anthonyhoang/cs/eventrider/newrelic.yml, /Users/anthonyhoang/.newrelic/newrelic.yml, /Users/anthonyhoang/newrelic.yml
+[2016-04-12 15:17:17 -0700 Anthonys-MacBook-Pro.local (4927)] INFO : Environment: development
+[2016-04-12 15:17:17 -0700 Anthonys-MacBook-Pro.local (4927)] INFO : No known dispatcher detected.
+[2016-04-12 15:17:17 -0700 Anthonys-MacBook-Pro.local (4927)] INFO : Application: development
+[2016-04-12 15:17:17 -0700 Anthonys-MacBook-Pro.local (4927)] WARN : No license key found. This often means your newrelic.yml file was not found, or it lacks a section for the running environment, 'development'. You may also want to try linting your newrelic.yml to ensure it is valid YML.
+[2016-04-12 15:17:17 -0700 Anthonys-MacBook-Pro.local (4927)] INFO : Installing ActiveJob instrumentation
+[2016-04-12 15:17:17 -0700 Anthonys-MacBook-Pro.local (4927)] INFO : Installing ActiveRecord 4 instrumentation
+[2016-04-12 15:17:17 -0700 Anthonys-MacBook-Pro.local (4927)] INFO : Installing Net instrumentation
+[2016-04-12 15:17:17 -0700 Anthonys-MacBook-Pro.local (4927)] INFO : Installing deferred Rack::Builder instrumentation
+[2016-04-12 15:17:17 -0700 Anthonys-MacBook-Pro.local (4927)] INFO : Installing Rack::Builder middleware instrumentation
+[2016-04-12 15:17:17 -0700 Anthonys-MacBook-Pro.local (4927)] INFO : Installing Rails 3+ middleware instrumentation
+[2016-04-12 15:17:17 -0700 Anthonys-MacBook-Pro.local (4927)] INFO : Installing Rails 4 Controller instrumentation
+[2016-04-12 15:17:17 -0700 Anthonys-MacBook-Pro.local (4927)] INFO : Installing Rails 4 view instrumentation
+[2016-04-12 15:17:17 -0700 Anthonys-MacBook-Pro.local (4927)] INFO : Installing Rails 4 Error instrumentation
+[2016-04-12 15:17:17 -0700 Anthonys-MacBook-Pro.local (4927)] INFO : Finished instrumentation
+[2016-04-12 15:32:15 -0700 Anthonys-MacBook-Pro.local (4839)] ERROR : Invalid license key, please contact support@newrelic.com
+[2016-04-12 15:32:15 -0700 Anthonys-MacBook-Pro.local (4839)] ERROR : Visit NewRelic.com to obtain a valid license key, or to upgrade your account.

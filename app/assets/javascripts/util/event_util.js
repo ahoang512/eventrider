@@ -1,8 +1,16 @@
 window.EventUtil = {
   getUserEvents : function (id) {
-    console.log('/' + id + '/events');
-    FB.api('/' + id + '/events/', function(response) {
-      EventActions.receiveEvents(response.data);
-    }.bind(this));
-  }.bind(this)
+  },
+
+  fetchFeaturedEvents : function () {
+    $.ajax({
+      url : "/api/events/featured",
+      type: "GET",
+      success : function (events) {
+        EventActions.receiveEvents(events);
+      }
+    });
+  },
+
+
 };

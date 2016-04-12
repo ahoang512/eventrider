@@ -10,5 +10,10 @@ var Homepage = React.createClass({
         <Footer/>
       </div>
     )
+  },
+
+
+  componentDidMount : function () {
+    EventUtil.fetchFeaturedEvents();
   }
 });
