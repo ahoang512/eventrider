@@ -47,10 +47,8 @@ var Featured = React.createClass({
     var events = []
     if (this.props.events.length !== 0){
       var events = this.props.events.map(function(eve){
-        return (<FeaturedTile event={eve}/>);
+        return (<FeaturedTile event={eve} key={eve.id}/>);
       });
-      // event1 = this.props.events[0].image_url;
-      // event2 = this.props.events[1].image_url;
     }
 
     return (
@@ -63,9 +61,18 @@ var Featured = React.createClass({
 
 FeaturedTile = React.createClass({
   // this.props.event
+  mixins : [ReactRouter.History],
+
+
+  _onClick : function () {
+    var route = "events/" + this.props.event.id;
+    var id = this.props.event.id;
+    this.history.pushState({}, route);
+  },
+
   render : function () {
     return (
-      <div className= "tile">
+      <div className= "tile" onClick={this._onClick}>
         <img src={this.props.event.image_url}/>
         <div className="date">{this.props.event.date}</div>
       </div>

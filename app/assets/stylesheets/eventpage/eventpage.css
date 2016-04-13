@@ -1,0 +1,11 @@
+#eventPage {
+  background-color: #F2F2F2;
+}
+
+#eventPage div:first-child{
+  /*position: absolute;
+  width: 100%;*/
+  z-index: -1;
+  background: black;
+  height: 51px;
+}

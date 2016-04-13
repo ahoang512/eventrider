@@ -12,5 +12,15 @@ window.EventUtil = {
     });
   },
 
+  fetchEvent : function (id) {
+    $.ajax({
+      url: "/api/events/" + id,
+      type: "GET",
+      success : function (eve){
+        EventActions.receiveEvent(eve);
+      }
+    });
+  }
+
 
 };

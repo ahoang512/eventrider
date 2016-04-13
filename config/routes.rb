@@ -7,7 +7,7 @@ Rails.application.routes.draw do
     # end
 
     namespace :api, defaults: {format: :json}  do
-      resources :events, only: [:index] do
+      resources :events, only: [:index, :show] do
         collection do
           get 'featured'
         end

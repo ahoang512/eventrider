@@ -2,17 +2,23 @@
   var CHANGE_EVENT = "events_changed";
 
   var _events = [];
+  var _selected = {};
 
   var resetEvents = function (events) {
-    console.log(events);
     _events = events;
   };
 
-
+  var resetSelected = function (eve){
+    _selected = eve;
+  };
 
   root.EventStore = $.extend({}, EventEmitter.prototype, {
     all : function () {
       return _events.slice();
+    },
+
+    selected : function () {
+      return _selected;
     },
 
     addChangeListener : function (callback) {
@@ -27,6 +33,10 @@
       switch (action.actionType) {
         case EventConstants.EVENTS_RECEIVED:
           resetEvents(action.events);
+          root.EventStore.emit(CHANGE_EVENT);
+          break;
+        case EventConstants.EVENT_RECEIVED:
+          resetSelected(action.eve);
           root.EventStore.emit(CHANGE_EVENT);
           break;
       }
