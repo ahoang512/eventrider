@@ -44,26 +44,31 @@ var FeaturedBar = React.createClass({
 var Featured = React.createClass({
   //this.props.events
   render : function () {
-    var event1 = this.props.events[0];
-    var event2 = this.props.events[1];
-    var loaded = true;
-    if (this.props.events.length == 0){
-      loaded = false;
+    var events = []
+    if (this.props.events.length !== 0){
+      var events = this.props.events.map(function(eve){
+        return (<FeaturedTile event={eve}/>);
+      });
+      // event1 = this.props.events[0].image_url;
+      // event2 = this.props.events[1].image_url;
     }
 
-    if (loaded){
-      return (
-        <div className="featured">
-          <div className= "tileContainer">
-            <div><img src={event1.image_url}/></div>
-            <div><img src={event2.image_url}/></div>
-          <div>
-        </div>
-      );
-    }else{
-      return(
-        <div></div>
-      )
-    }
+    return (
+      <div className="featured">
+          {events}
+      </div>
+    );
+  }
+});
+
+FeaturedTile = React.createClass({
+  // this.props.event
+  render : function () {
+    return (
+      <div className= "tile">
+        <img src={this.props.event.image_url}/>
+        <div className="date">{this.props.event.date}</div>
+      </div>
+    )
   }
 });

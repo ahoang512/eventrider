@@ -16,3 +16,9 @@ event2 = Event.create(name: 'Electric Daisy Carnival',
                       date: 'June 17-19, 2016',
 image_url: "http://res.cloudinary.com/dayd3nm4v/image/upload/v1459893106/edc_oddr9p.jpg"
 )
+
+event3 = Event.create(name: 'G-Eazy & Logic',
+                      location: "Mountain View",
+                      date: 'July 8, 2016',
+image_url: "http://res.cloudinary.com/dayd3nm4v/image/upload/v1460504526/13001159_992850854116676_5923063616234206268_n_xopt9o.jpg"
+)

@@ -13,19 +13,44 @@
   text-align: center;
 }
 
-#featuredBar .featured div {
+#featuredBar .featured {
+  width: 80%;
+  margin: auto;
+  text-align: center;
+}
+
+#featuredBar .featured .tile {
   display: inline-block;
   height: 300px;
   width: 450px;
   margin: 5px;
+  margin-left: 10px;
   border-style: solid;
   border-width: 3px;
+  background-color: black;
+}
+
+#featuredBar .date {
+  color: white;
+  position: absolute;
+  font-size: 20px;
 }
 
 #featuredBar .featured img {
+  float: left;
   height: 300px;
   width: 450px;
+  overflow: none;
+  opacity: 0.9;
+  cursor: pointer;
+
+
 }
+#featuredBar .featured img:hover {
+  overflow: none;
+  opacity: 1.0;
+}
+
 
 
 .requestPrompt  {
