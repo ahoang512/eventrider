@@ -26,7 +26,7 @@ var FeaturedBar = React.createClass({
   render : function () {
     return (
       <div id="featuredBar">
-        <div className="prompt">Featured Shows</div>
+        <div className="prompt">Featured</div>
         <Featured events = {this.state.events}/>
         <div className="requestPrompt">
           <div>Don't see your event?</div>
