@@ -6,12 +6,10 @@ var Events = React.createClass({
     return ({
       user : "",
       events : [],
-
     });
   },
 
   componentDidMount : function () {
-    UserUtil.getCurrentUser();
     EventStore.addChangeListener(this._onChange);
     UserStore.addChangeListener(this._onChange);
   },
@@ -22,11 +20,9 @@ var Events = React.createClass({
   },
 
   _onChange : function () {
-    var user = UserStore.user();
-
     this.setState({
       events : EventStore.all(),
-      user : user
+      user : UserStore.user()
     });
   },
 

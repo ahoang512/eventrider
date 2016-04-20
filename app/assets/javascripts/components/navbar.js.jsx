@@ -3,52 +3,27 @@ var NavBar = React.createClass({
 
   getInitialState : function () {
     return (
-      {loggedIn : false}
+      {loggedIn : UserStore.loggedIn(),
+          user  : UserStore.user()}
     );
   },
 
   componentDidMount : function () {
-    this._mountFB();
+    UserStore.addChangeListener(this._onChange);
+  },
+  componentWillMount : function () {
+    UserStore.removeChangeListener(this._onChange);
   },
 
-  _mountFB : function (){
-    window.fbAsyncInit = function() {
-      FB.init({
-        appId      : '1047250635331130',
-        cookie     : true,  // enable cookies to allow the server to access
-                            // the session
-        xfbml      : true,  // parse social plugins on this page
-        version    : 'v2.2' // use version 2.2
-      });
-
-      FB.getLoginStatus(function(response) {
-        this.statusChangeCallback(response);
-      }.bind(this));
-    }.bind(this);
-
-    // Load the SDK asynchronously
-    (function(d, s, id) {
-      var js, fjs = d.getElementsByTagName(s)[0];
-      if (d.getElementById(id)) return;
-      js = d.createElement(s); js.id = id;
-      js.src = "//connect.facebook.net/en_US/sdk.js";
-      fjs.parentNode.insertBefore(js, fjs);
-    }(document, 'script', 'facebook-jssdk'));
+  _onChange : function () {
+    this.setState({
+      user : UserStore.user(),
+      loggedIn : UserStore.loggedIn()
+    })
   },
 
-  statusChangeCallback : function(response) {
 
-    if (response.status === 'connected') {
-      this.setState({
-        loggedIn : true
-      });
-    } else if (response.status === 'not_authorized') {
-      // The person is logged into Facebook, but not your app.
-    } else {
-      // The person is not logged into Facebook, so we're not sure if
-      // they are logged into this app or not.
-    }
-  },
+
 
 
 
@@ -56,11 +31,7 @@ var NavBar = React.createClass({
     e.preventDefault();
     switch (e.target.textContent){
       case "Log Out":
-        FB.logout(function(response) {
-          this.setState({
-            loggedIn : false
-          });
-        }.bind(this));
+        UserActions.logout();
         break;
       case "Log In":
         this.history.pushState({}, "login");
@@ -75,7 +46,7 @@ var NavBar = React.createClass({
 
 
   render : function () {
-    this._mountFB();
+    // this._mountFB();
     var logged = this.state.loggedIn ? "Log Out" : "Log In";
     return (
       <div className="navbar">

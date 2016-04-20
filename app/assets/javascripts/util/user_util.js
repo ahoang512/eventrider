@@ -12,8 +12,19 @@ window.UserUtil = {
       type: "GET",
       data : params,
       success : function (){
-        
+
       }
-    })
+    });
+  },
+
+  createUser : function (user) {
+    $.ajax({
+      url: "api/users",
+      type: "POST",
+      data : user,
+      success : function (user) {
+        UserActions.receiveCurrentUser(user);
+      }
+    });
   }
 };

@@ -2,10 +2,10 @@
 /tmp/*
 *~
 *.log
-log/*
+/log/*
 newrelic_agent.log
 .byebug_history
-
+/test/*
 # Ignore application configuration
 /config/application.yml
 

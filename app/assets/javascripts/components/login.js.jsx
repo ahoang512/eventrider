@@ -1,5 +1,6 @@
 var Login = React.createClass({
   mixins : [ReactRouter.History],
+  //10153429560556872
   // FB.api("/10153429560556872/events", function(response) { console.log(response)})
   // FB.api('/10153429560556872/picture',function(resp){ console.log(resp)})
   getInitialState : function(){
@@ -58,7 +59,6 @@ var Login = React.createClass({
       // Logged into your app and Facebook.
       // this.history.pushState({}, "events");
       // this.testAPI();
-      debugger
       this.history.pushState({}, "/");
       // this.setState({
       //   loggedIn : true
@@ -77,17 +77,11 @@ var Login = React.createClass({
 
   // Here we run a very simple test of the Graph API after login is
   // successful.  See statusChangeCallback() for when this call is made.
-  testAPI : function()  {
+  checkExistingUser : function()  {
 
-    console.log('Welcome!  Fetching your information.... ');
     FB.api('/me', function(response) {
       console.log(JSON.stringify(response));
-
-      console.log(response);
-      console.log('Successful login for: ' + response.name);
-      // document.getElementById('status').innerHTML =
-      //   'Thanks for logging in, ' + response.name + '!';
-
+      UserUtil.createUser(response);
     });
   },
 
@@ -102,12 +96,13 @@ var Login = React.createClass({
 
 
   handleClick : function (e) {
-
+    // UserActions.login
     FB.login(function(response){
-      debugger
+      this.checkExistingUser();
       this.checkLoginState(response);
     }.bind(this),
-      {scope : 'public_profile,email,user_events'}
+      // {scope : 'public_profile,email,user_events'}
+      {scope : 'email'}
     );
 
     // if (e.target.textContent === "Log In"){

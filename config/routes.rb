@@ -12,5 +12,11 @@ Rails.application.routes.draw do
           get 'featured'
         end
       end
+
+      resources :users, only: [:create] do
+        member do
+          get 'suggest'
+        end
+      end
     end
 end
