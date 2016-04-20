@@ -21,12 +21,6 @@ var NavBar = React.createClass({
       loggedIn : UserStore.loggedIn()
     })
   },
-
-
-
-
-
-
   _log : function (e){
     e.preventDefault();
     switch (e.target.textContent){
@@ -46,7 +40,6 @@ var NavBar = React.createClass({
 
 
   render : function () {
-    // this._mountFB();
     var logged = this.state.loggedIn ? "Log Out" : "Log In";
     return (
       <div className="navbar">
