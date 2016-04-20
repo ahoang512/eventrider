@@ -1,11 +1,45 @@
 #eventPage {
-  background-color: #F2F2F2;
+  background-color: #F4F4F4;
+  height: 100%;
+  width: 100%;
 }
 
-#eventPage div:first-child{
+#eventPage .navBackground{
   /*position: absolute;
   width: 100%;*/
   z-index: -1;
   background: black;
   height: 51px;
+}
+
+#eventPage .banner {
+  background-color: white;
+  height: 75%;
+  position: fixed;
+  border-style: solid;
+  border-color: black;
+  border-width: thin;;
+  border-radius: 10px;
+  top: 15%;
+  left: 5%;
+  width: 45%;
+  text-align: center;
+}
+
+#eventPage .banner span {
+  margin-left: 20px;
+  font-size: 1.4vw;
+}
+
+#eventPage .banner .name {
+  font-size: 3.5vw;
+  margin: 4px;
+  padding-top: 10%;
+}
+
+#eventPage img {
+  margin-top: 3%;
+  max-width: 95%;
+  min-width: 400px;
+
 }

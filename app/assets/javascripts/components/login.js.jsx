@@ -58,6 +58,7 @@ var Login = React.createClass({
       // Logged into your app and Facebook.
       // this.history.pushState({}, "events");
       // this.testAPI();
+      debugger
       this.history.pushState({}, "/");
       // this.setState({
       //   loggedIn : true
@@ -103,6 +104,7 @@ var Login = React.createClass({
   handleClick : function (e) {
 
     FB.login(function(response){
+      debugger
       this.checkLoginState(response);
     }.bind(this),
       {scope : 'public_profile,email,user_events'}

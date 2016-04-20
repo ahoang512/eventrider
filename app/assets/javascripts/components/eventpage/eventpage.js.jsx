@@ -23,14 +23,18 @@ EventPage = React.createClass({
       EventStore.removeChangeListener(this._onChange);
   },
   render : function () {
-    var src = this.state.eve.image_url;
-    if (src=== 'undefined'){
-      src = "";
-    }
+    var eve = this.state.eve;
+    var src = eve.image_url;
+    var name = eve.name;
 
 
     var EventBanner = (
-      <div><img src={src}/></div>
+      <div className="banner">
+        <div className="name">{name}</div>
+        <span>{eve.date}</span>
+        <span>{eve.location}</span>
+        <img src={src}/>
+      </div>
     );
 
     return(
