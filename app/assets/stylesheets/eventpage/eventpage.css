@@ -15,9 +15,10 @@
 #eventPage .banner {
   background-color: white;
   height: 75%;
+  min-height: 500px;
   position: fixed;
   border-style: solid;
-  border-color: black;
+  border-color: grey;
   border-width: thin;;
   border-radius: 10px;
   top: 15%;
@@ -41,5 +42,30 @@
   margin-top: 3%;
   max-width: 95%;
   min-width: 400px;
+}
 
+#eventPage .ridesContainer {
+  margin-top: 5%;
+  float: right;
+  width: 45%;
+}
+
+#eventPage ul {
+  width: 90%;
+  background-color: #91EEFD;
+}
+
+#eventPage .rideTab {
+  background-color: white;
+  height: 90px;
+  border-style: solid;
+  border-color: grey;
+  border-width: thin;;
+  border-radius: 5px;
+
+  text-align: center;
+}
+
+#eventPage .rideTab:hover {
+  opacity: 0.8;
 }

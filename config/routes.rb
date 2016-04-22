@@ -18,5 +18,7 @@ Rails.application.routes.draw do
           get 'suggest'
         end
       end
+
+      resources :rides, only: [:index]
     end
 end

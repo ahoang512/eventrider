@@ -6,6 +6,8 @@
 #   cities = City.create([{ name: 'Chicago' }, { name: 'Copenhagen' }])
 #   Mayor.create(name: 'Emanuel', city: cities.first)
 
+anthony = User.create(fb_id: "10153429560556872", name: "Anthony Hoang");
+
 event1 = Event.create(name: 'Outside Lands',
                       location: "San Francisco",
                       date: 'August 5-7, 2016',
@@ -28,3 +30,10 @@ event4 = Event.create(name: 'Copa America : USA vs Colombia',
                       date: 'June 3, 2016',
 image_url: "http://res.cloudinary.com/dayd3nm4v/image/upload/v1460566845/Copa-US-Colombia-2-650x326_nkkco2.png"
 )
+
+ride1 = Ride.create(user_id: 1, event_id: event1.id, seats: 10);
+ride2 = Ride.create(user_id: 1, event_id: event2.id, seats: 7);
+ride3 = Ride.create(user_id: 1, event_id: event2.id, seats: 6);
+ride4 = Ride.create(user_id: 1, event_id: event2.id, seats: 3);
+ride5 = Ride.create(user_id: 1, event_id: event2.id, seats: 5);
+ride6 = Ride.create(user_id: 1, event_id: event2.id, seats: 4);
