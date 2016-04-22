@@ -36,6 +36,7 @@ EventPage = React.createClass({
     var rideTabs = rides.map(function(ride) {
       return (
         <li className="rideTab" key={ride.id}>
+          <img src={ride.photo}/>
           {ride.seats}
         </li>
       )

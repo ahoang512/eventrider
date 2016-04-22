@@ -3,6 +3,6 @@ class Api::RidesController < ApplicationController
   def index
     event_id = params[:event_id]
     @rides = Event.find(event_id).rides
-    render json: @rides
+    render :index
   end
 end

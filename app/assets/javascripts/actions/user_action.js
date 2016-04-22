@@ -95,11 +95,17 @@ statusChangeCallback = function(response) {
 };
 
 var checkExistingUser = function()  {
-  FB.api('/me', function(response) {
-    console.log(JSON.stringify(response));
-    UserUtil.createUser(response);
+  FB.api('/me?fields=id,name,picture', function(response) {
+    var photo_url = response.picture.data.url;
+    var user = {
+      name : response.name,
+      id : response.id,
+      photo: photo_url
+    };
+    UserUtil.createUser(user);
   });
 };
+
 
 var checkLoginState = function(response) {
   FB.getLoginStatus(function(response) {

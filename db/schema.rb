@@ -29,6 +29,7 @@ ActiveRecord::Schema.define(version: 20160420214707) do
     t.integer  "user_id",    null: false
     t.integer  "event_id",   null: false
     t.integer  "seats",      null: false
+    t.string   "city",       null: false
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
   end
@@ -39,6 +40,7 @@ ActiveRecord::Schema.define(version: 20160420214707) do
   create_table "users", force: :cascade do |t|
     t.string   "fb_id",      null: false
     t.string   "name",       null: false
+    t.string   "photo",      null: false
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
   end
