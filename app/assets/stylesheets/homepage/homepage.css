@@ -10,7 +10,6 @@
 .homeTop {
   background: linear-gradient( rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3) ) , url('http://res.cloudinary.com/dayd3nm4v/image/upload/q_70/v1456974330/24752607950_a59864b2e1_o_hlwruk.jpg');
   background-position: bottom;
-  filter: brightness(50%);
   background-size: cover !important;
   min-height: 600px;
   width: 100%;
